@@ -12,7 +12,8 @@ server_secret = random.randint(1, 100)
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
-    s.listen()
+    s.listen() 
+    
 
     print("[SERVER] Waiting...")
     conn, addr = s.accept()
